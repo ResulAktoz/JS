@@ -99,7 +99,6 @@ function totalPrice(){
 //addBasket(3) diyelim sayfa yenilendi yani bunlar kalktı.
 /*addBasket(2)
 localStorage.setItem('basket', basket)*/
-removeBasket(3)
 console.log(
     totalPrice()
 )
