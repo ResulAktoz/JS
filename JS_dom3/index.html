@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .error {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form" onsubmit="return false">
+      <input type="color" id="color-picker" />
+
+      <input type="text" id="name" placeholder="Adinizi yazin." />
+      <select id="gender" multiple>
+        <option value="">Sec</option>
+        <option value="kadin">Kadin</option>
+        <option value="erkek">Erkek</option>
+      </select>
+      <label for="">
+        <input type="checkbox" id="save-rules" />
+        Kuralları kabul ediyorum
+      </label>
+      <div>
+        <label for=""
+          ><input type="radio" name="stack" value="lamp" />Lamp</label
+        >
+        <label for=""
+          ><input type="radio" name="stack" value="wamp" />Wamp</label
+        >
+      </div>
+      <button id="save-btn">kaydet</button>
+    </form>
+    <hr />
+    <button id="btn">Button</button>
+    <button id="btn" onclick="clickHandle(this)">Button</button>
+    <img
+      src="https://github.com/Asabeneh/30-Days-Of-JavaScript/raw/master/images/day_1_1.png"
+      alt=""
+    />
+    <script src="day23.js"></script>
+  </body>
 </html>
