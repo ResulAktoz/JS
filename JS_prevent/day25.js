@@ -30,3 +30,5 @@
         e.target.classList.toggle('completed')
     })
  })
+
+ todos.querySelectorAll('li').forEach(li => {
