@@ -110,4 +110,4 @@ aElements.forEach(a => {
     if(a.hasAttribute('title')){
         a.style.backgroundColor= blue
     }
-}
+})
