@@ -31,4 +31,4 @@
     })
  })
 
- todos.querySelectorAll('li').forEach(li => {
+ //todos.querySelectorAll('li').forEach(li => {
