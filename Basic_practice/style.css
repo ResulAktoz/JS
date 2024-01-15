@@ -1,0 +1,237 @@
+*{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    list-style: none;
+
+    border: 0;
+
+    box-sizing: border-box;
+
+}
+
+html,
+
+body{
+
+    padding: 10px;
+
+    height: 100%;
+
+}
+
+ 
+
+summary::marker{
+
+    content: '';
+
+}
+
+.item{
+
+    border: 1px solid #ddd;
+
+    margin-bottom: 15px;
+
+    transition: 300ms all;
+
+     summary{
+
+        padding:10px 20px;
+
+        font-size: 15px;
+
+        font-weight: 500;
+
+        cursor: pointer;
+
+    }
+
+    .item-content{
+
+        padding: 15px 20px;
+
+        font-size: 15px;
+
+        line-height: 1.5;
+
+    }
+
+}
+
+ 
+
+details.item .item-content ul li{
+
+    opacity: 0;
+
+    animation: 1s itemFade forwards;
+
+}
+
+ 
+
+ 
+
+details.item .item-content ul li:nth-child(2){
+
+    animation-delay: 250ms;
+
+}
+
+details.item .item-content ul li:nth-child(3){
+
+    animation-delay: 500ms;
+
+}
+
+ 
+
+details[open].item{
+
+    border-color: rebeccapurple;
+
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .2);
+
+       
+
+}
+
+hr{
+
+    border-top: 1px solid purple;
+
+}
+
+ 
+
+@keyframes dropdown {
+
+    from{
+
+        opacity: 0;
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(5px);
+
+    }
+
+}
+
+ 
+
+@keyframes itemFade {
+
+    from{
+
+        opacity: 0;
+
+    }
+
+    to{
+
+        opacity: 1;
+
+    }
+
+}
+
+ 
+
+details.dropdown{
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+details[open].dropdown summary{
+
+    background-color:rebeccapurple ;
+
+    color: #ddd;
+
+}
+
+button{
+
+    cursor: pointer;
+
+}
+
+details.dropdown summary{
+
+    background-color: #eee;
+
+    border-radius: 3px;
+
+    color: #999;
+
+    height: 40px;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 300ms all;
+
+}
+
+details.dropdown nav{
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    width: 200px;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    border-radius: 0 0 3px 3px;
+
+}
+
+ 
+
+details[open].dropdown nav {
+
+    animation: 1500ms dropdown forwards;
+
+}
+
+ 
+
+details.dropdown nav li a{
+
+    display: block;
+
+    padding: 8px 10px;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    color: #555;
+
+}
+
+details.dropdown nav li a:hover{
+
+    background-color: #f8f8f8;
+
+}
